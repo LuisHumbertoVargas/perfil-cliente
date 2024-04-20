@@ -1,0 +1,136 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #8e44ad, #ffffff);
+  color: #000;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px; /* Espaciado entre las tarjetas */
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  width: 30%; /* Ajuste del ancho de la tarjeta */
+  background-color: #fff;
+  margin: 20px;
+  padding: 20px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.card-content {
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.card-title {
+  margin-top: 12px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.hidden {
+  display: none;
+}
+
+.toggle-btn {
+  background-color: #8e44ad;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  background-color: #6c3483;
+}
+
+.datos {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.historia {
+  text-align: left;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 60px;
+  color: white;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: disc;
+  padding: 1;
+}
+
+li {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+/* Media queries para hacer el diseño responsive */
+@media screen and (max-width: 1024px) {
+  .card {
+    width: 45%; /* Reducir el ancho de la tarjeta en pantallas medianas */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    flex-direction: column; /* Cambiar el diseño de las tarjetas a una columna en pantallas pequeñas */
+    align-items: center; /* Centrar las tarjetas en pantallas pequeñas */
+  }
+
+  .card {
+    width: 90%; /* Ajustar el ancho de la tarjeta en pantallas pequeñas */
+  }
+
+  .toggle-btn {
+    margin: 10px 0; /* Espaciado entre los botones en pantallas pequeñas */
+  }
+
+  .datos,
+  .historia {
+    max-width: 90%; /* Ajustar el ancho de los contenedores de datos e historia en pantallas pequeñas */
+  }
+}
