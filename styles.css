@@ -120,7 +120,7 @@ li {
 }
 
 header {
-  text-align: center; /* Centrar el contenido */
+  /* text-align: left; Centrar el contenido */
   margin-bottom: 0;
 }
 
