@@ -39,6 +39,12 @@ body {
   text-align: center;
 }
 
+.card-intro {
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: left;
+}
+
 .card-title {
   margin-top: 12px;
   font-size: 1.5rem;
@@ -83,9 +89,13 @@ body {
   text-align: left;
 }
 
+.titulo {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifgit;
+}
+
 h1 {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   color: white;
 }
 
